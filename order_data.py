@@ -34,7 +34,7 @@ for book in books:
 
 # POST data
 address = {
-   "name": "Hans Dampf",
+   "name": "Yishai Rasowsky",
    "street1": "Street address 1",
    "street2": "(optional) street address second line",
    "city": "Glenmont",
@@ -44,13 +44,12 @@ address = {
    "phone_number": "555-555-0689",
 }
 shipping_level = 'MAIL' 
-"""
-MAIL - Slowest ship method. Depending on the destination, tracking might not be available.
-PRIORITY_MAIL - priority mail shipping
-GROUND - Courier based shipping using ground transportation in the US.
-EXPEDITED - expedited (2nd day) delivery via air mail or equivalent
-EXPRESS - overnight delivery. Fastest shipping available.
-"""
+# FIVE OPTIONS for shipping_level:
+# 1. MAIL - Slowest ship method. Depending on the destination, tracking might not be available.
+# 2. PRIORITY_MAIL - priority mail shipping
+# 3. GROUND - Courier based shipping using ground transportation in the US.
+# 4. EXPEDITED - expedited (2nd day) delivery via air mail or equivalent
+# 5. EXPRESS - overnight delivery. Fastest shipping available.
 order_json = {
     "contact_email": 'myname@somesite.com',
     "external_id": external_id,
